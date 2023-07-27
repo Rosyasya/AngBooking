@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {CardService} from "./card/card.service";
 
 @Component({
@@ -7,6 +7,5 @@ import {CardService} from "./card/card.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent extends CardService{
-
-
+  booking = this.info;
 }

@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {ICard} from "./icard";
 
 @Component({
   selector: 'app-card',
@@ -6,12 +7,11 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent{
+  @Input() card: ICard;
 
-  @Input() booking: object = {};
-  //
-  // day = this.booking.dateFrom.getDay();
-  // month = this.booking.dateFrom.getMonth();
-  // year = this.booking.dateFrom.getFullYear();
-  // hours = this.booking.dateFrom.getHours();
-  // minutes = this.booking.dateFrom.getMinutes();
+  day = this.card.dateFrom.getDay();
+  month = this.card.dateFrom.getMonth();
+  year = this.card.dateFrom.getFullYear();
+  hours = this.card.dateFrom.getHours();
+  minutes = this.card.dateFrom.getMinutes();
 }

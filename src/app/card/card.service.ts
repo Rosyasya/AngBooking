@@ -5,7 +5,7 @@ import {ICard} from "./icard";
   providedIn: 'root'
 })
 export class CardService {
-  booking: Array<ICard> = [
+  info: Array<ICard> = [
     {
       id: 1,
       user: 'First User',
