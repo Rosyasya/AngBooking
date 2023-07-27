@@ -1,0 +1,67 @@
+<div class="card">
+  <div class="options">
+    <a href="#">#{{booking[0].id}}</a>
+    <button>menu</button>
+  </div>
+
+  <h2 class="title">{{booking[0].user}}</h2>
+
+  <div class="info">
+    <div class="info__container">
+      <h5>Type room</h5>
+      <h4>{{booking[0].roomType}}</h4>
+    </div>
+    <div class="info__container">
+      <h5>Room #</h5>
+      <h4>{{booking[0].roomNum}}</h4>
+    </div>
+    <div class="info__container">
+      <h5>Guests</h5>
+      <h4>{{booking[0].guestAmount}}</h4>
+    </div>
+    <div class="info__container">
+      <h5>Payment method</h5>
+      <h4>{{booking[0].payment}}</h4>
+    </div>
+    <div class="info__container">
+      <h5>Source</h5>
+      <h4>{{booking[0].source}}</h4>
+    </div>
+  </div>
+
+  <div class="date">
+    <div class="date__container">
+      <h4>{{day}}-{{month}}-{{year}}</h4>
+      <h4>{{hours}}:{{minutes}} PM</h4>
+    </div>
+    <div class="date__container">
+      <h4>{{booking[0].daysAmount}}</h4>
+      <h4>{{booking[0].daysAmount === 1 ? 'night' : 'nights'}}</h4>
+    </div>
+    <div class="date__container">
+      <h4>{{day}}-{{month}}-{{year}}</h4>
+      <h4>{{hours}}:{{minutes}} PM</h4>
+    </div>
+  </div>
+
+  <div class="price">
+    <div class="price__container">
+      <h4 class="price__title">Sub Total</h4>
+      <h4>${{booking[0].subTotal}}</h4>
+    </div>
+    <div class="price__container">
+      <h4 class="price__title">Advance Payment</h4>
+      <h4>${{booking[0].advancePayment}}</h4>
+    </div>
+    <div class="price__container">
+      <h4 class="price__title">Discount</h4>
+      <h4>${{booking[0].discount}}</h4>
+    </div>
+    <div class="price__container">
+      <h4 class="price__title">Total</h4>
+      <h4>${{booking[0].total}}</h4>
+    </div>
+  </div>
+
+  <a class="link" href="#">Check out</a>
+</div>

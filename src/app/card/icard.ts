@@ -1,0 +1,16 @@
+export interface ICard {
+  id: number,
+  user: string,
+  roomType: string,
+  roomNum: number,
+  guestAmount: number,
+  payment: string,
+  source: string,
+  dateFrom: Date,
+  daysAmount: number,
+  dateTo: Date,
+  subTotal: number,
+  advancePayment: number,
+  discount: number,
+  total: number,
+}
