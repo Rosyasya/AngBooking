@@ -1,15 +1,17 @@
-import { Component } from '@angular/core';
-import {CardService} from "./card.service";
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
-export class CardComponent extends CardService{
-  day = this.booking[0].dateFrom.getDay();
-  month = this.booking[0].dateFrom.getMonth();
-  year = this.booking[0].dateFrom.getFullYear();
-  hours = this.booking[0].dateFrom.getHours();
-  minutes = this.booking[0].dateFrom.getMinutes();
+export class CardComponent{
+
+  @Input() booking: object = {};
+  //
+  // day = this.booking.dateFrom.getDay();
+  // month = this.booking.dateFrom.getMonth();
+  // year = this.booking.dateFrom.getFullYear();
+  // hours = this.booking.dateFrom.getHours();
+  // minutes = this.booking.dateFrom.getMinutes();
 }
